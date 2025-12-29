@@ -12,6 +12,7 @@ ollama:
   # -- List of models to pull at container startup
   models:
     pull:
+      - qwen2.5:14b 
       - mistral
       - llama2
 
