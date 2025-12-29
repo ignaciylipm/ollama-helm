@@ -18,10 +18,10 @@ ollama:
 service:
   type: LoadBalancer
 
-podSecurityContext: {}
+podSecurityContext:
    fsGroup: 1000
 
-securityContext: {}
+securityContext: 
   capabilities:
     drop:
      - ALL
@@ -30,3 +30,4 @@ securityContext: {}
   runAsUser: 1000
   seccompProfile:
     type: RuntimeDefault
+  allowPrivilegeEscalation:false
