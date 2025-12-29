@@ -16,6 +16,6 @@ kubectl create ns 80-ollama-pro
 ```
 
 Instalación
-
+```
 helm upgrade ollama otwld/ollama --namespace ollama --values conf/values.yaml
-
+```
